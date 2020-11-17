@@ -1,7 +1,7 @@
 ### [*Bài tập] Luyện tập vòng lặp 01
 
 - Bài 1: Sử dụng vòng lặp để đếm từ 1 đến 100. Khi số là 99, hiển thị hộp thoại thông báo là đã hoàn thành.
-![](Flowcharts/Bai_1.png)
+![alt](Flowcharts/Bai_1.png)
 
 - Bài 2: Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập. Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ. Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ.
 ![](Flowcharts/Bai_2.png)
