@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<style>
+    button{
+        width: 300px;
+        height: 200px;
+        font-size: 50px;
+        padding: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+</style>
+
+<body id="body">
+
+<button onclick="start()">CHƠI</button>
+
+<script>
+    function start(){
+        let timeBack = 3;
+        let range = prompt("Bạn muốn đoán trong khoảng bao nhiêu số?");
+
+        if (isNaN(range)){
+            alert("Đó không phải một số!");
+            return;
+        }
+        else if (+range == 0){
+            alert("Phải là một số khác 0!");
+            return;
+        }
+
+        let numForWin = Math.floor(Math.random() * (+range - 1 + 1) ) + 1;
+
+        while (timeBack > 0){
+            let yourNum = prompt("Bạn đoán số đó là bao nhiêu?");
+
+            if (isNaN(yourNum)){
+                alert("Đó không phải một số!");
+                return;
+            }
+            yourNum = +yourNum;
+
+            if (yourNum == numForWin){
+                alert("Chúc mừng bạn, bạn đoán quá siêu :)))");
+                return;
+            }
+            else {
+                timeBack--;
+                alert("Bạn đã đoán sai, hãy đoán lại! Bạn còn " + timeBack + " lượt đoán");
+            }
+        }
+
+        alert("Bạn thua mất rồi! Số cần tìm là: " + numForWin);
+    }
+
+</script>
+
+</body>
+</html>

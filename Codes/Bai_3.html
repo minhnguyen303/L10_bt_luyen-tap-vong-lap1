@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let temp, nextF = 0;
+    let curF = 1;
+
+    for (let i = 0; i < 20; i++){
+        document.write(curF + "<br>");
+        temp = curF;
+        curF += nextF;
+        nextF = temp;
+    }
+</script>
+</body>
+</html>

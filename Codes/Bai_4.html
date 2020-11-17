@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<script>
+    let temp, nextNum = 0;
+    let curNum = 1;
+
+    for (let i = 0; i < 20; i++){
+        if ((curNum%5) == 0){
+            alert(curNum + " là số đầu tiên trong dãy Fibonacci chia hết cho 5!");
+            break;
+        }
+        temp = curNum;
+        curNum += nextNum;
+        nextNum = temp;
+    }
+</script>
+</body>
+</html>

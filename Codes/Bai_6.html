@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let curNum = 1;
+    let sum = 0;
+
+    while (count < 30){
+        if ((curNum%7) == 0){
+            sum += curNum;
+            count++;
+        }
+        curNum++
+    }
+    alert("Tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên là: " + sum);
+
+</script>
+</body>
+</html>

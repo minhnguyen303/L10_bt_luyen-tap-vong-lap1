@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let sum = 0;
+    let temp = 0;
+    let nextNum = 0;
+    let curNum = 1;
+
+    for (let i = 0; i < 20; i++){
+        sum += curNum;
+        temp = curNum;
+        curNum += nextNum;
+        nextNum = temp;
+    }
+    alert("Tổng của 20 số đầu tiên trong dãy fibonacci là: " + sum);
+</script>
+</body>
+</html>
